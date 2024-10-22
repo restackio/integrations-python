@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "integrations-python"
+version = "0.0.1"
+description = ""
+authors = ["Restack Team <service@restack.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+restack-ai = "^0.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
