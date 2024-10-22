@@ -4,9 +4,9 @@ from openai import Model, ChatCompletionParamsNonStreaming, ChatCompletion
 from openai.utils.client import openai_client
 from openai.utils.cost import openai_cost, TokensCount, Price
 from dataclasses import dataclass
+from pydantic import BaseModel
 
-@dataclass
-class OpenAIChatInput:
+class OpenAIChatInput(BaseModel):
     user_content: str
     system_content: str | None = None
     model: Model | None = None

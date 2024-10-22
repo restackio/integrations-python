@@ -1,12 +1,11 @@
 from dataclasses import dataclass
+from pydantic import BaseModel
 
-@dataclass
-class TokensCount:
+class TokensCount(BaseModel):
     input: int
     output: int
 
-@dataclass
-class Price:
+class Price(BaseModel):
     input: float
     output: float
 
