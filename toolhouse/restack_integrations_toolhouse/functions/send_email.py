@@ -1,7 +1,7 @@
 from restack_ai.function import function
 from openai import OpenAI
 from dataclasses import dataclass
-from restack_integrations_toolhouse.utils.toolhouse_client import get_toolhouse_client
+from restack_integrations_toolhouse.utils.toolhouse_client import toolhouse_client
 
 @dataclass
 class MailParams:
@@ -14,7 +14,7 @@ class MailParams:
 @function.defn(name="mail_website_summary")
 async def mail_website_summary(input: MailParams) -> bool:
     client = OpenAI(api_key=input.openai_api_key)
-    th = get_toolhouse_client(api_key=input.toolhouse_api_key, provider="openai")
+    th = toolhouse_client(api_key=input.toolhouse_api_key, provider="openai")
 
     messages = [
         {"role": "user", "content": f"Send email to {input.to} with the following subject: {input.subject} and body: {input.body}"},
