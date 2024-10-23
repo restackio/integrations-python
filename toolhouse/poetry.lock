@@ -1224,20 +1224,6 @@ click = ">=8.1.7,<9.0.0"
 llama-index-core = ">=0.11.0"
 
 [[package]]
-name = "load-dotenv"
-version = "0.1.0"
-description = "Automatically and implicitly load environment variables from .env file"
-optional = false
-python-versions = "*"
-files = [
-    {file = "load-dotenv-0.1.0.tar.gz", hash = "sha256:bbe5f40072d4a61eadca66de6c222df5a2d935d6d41b703be1ff75396f635145"},
-    {file = "load_dotenv-0.1.0-py3-none-any.whl", hash = "sha256:614803f720153fb8a5f97124a72aaa3930a67aa5547cbe8603d01ea7f9ac1adf"},
-]
-
-[package.dependencies]
-python-dotenv = "*"
-
-[[package]]
 name = "marshmallow"
 version = "3.23.0"
 description = "A lightweight library for converting complex datatypes to and from native Python datatypes."
@@ -2822,4 +2808,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.13"
-content-hash = "351dd1ad4239371329329e35f4fa97bf51a91eccb7811103efd8602999bc0da5"
+content-hash = "943556a8216073863143ddcaa838b02a18d51928982c33ac4515aff26b1d7b21"
